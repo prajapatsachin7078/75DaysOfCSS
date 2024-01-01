@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Payment</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" class="css">
+
+</head>
+<body>
+   <div class="main-container">
+    <div class="left">
+        <h5><i class='bx bx-left-arrow-alt'>Back to Shihpping Information</i></h5>
+        <h2>Payment Method</h2>
+        <div class="card-details">
+           <div class="card-brand">
+                <div class="big-circle">
+                    <div class="small-circle">
+                    </div>
+                </div>
+                <h4>Credit Card</h4>
+           </div>
+
+           <div class="card-number">
+                <!-- Label and input field -->
+                <label for="card-input">Credit card</label>
+                <input type="tel" id="card-input" placeholder="0000 0000 0000 0000">
+                <!-- Card icons to the right -->
+                <i class="bx bx-credit-card"></i>
+                <div class="card-icons-right">
+                        <img src="./Images/mastercard.png" alt="MasterCard">
+                        <img src="./Images/visa.png" alt="Visa">
+                </div>
+            </div>
+            <div class="card-number">
+                <!-- Label and input field -->
+                <label for="card-input">Name of card holder</label>
+                <input type="text" id="card-input" placeholder="Enter your name">
+                <!-- Card icons to the right -->
+                <i class="bx bx-user"></i>
+            </div>
+
+            <div class="date-of-card">
+                <div class="card-sm-input">
+                    <!-- Label and input field -->
+                    <label for="card-input">Expiry date</label>
+                    <!-- Card icons to the right -->
+                    
+                    <input type="text" id="card-input" placeholder="MM/YY">
+                    <i class="bx bx-calendar"></i>
+                    
+                </div>
+                <div class="card-sm-input">
+                    <!-- Label and input field -->
+                    <label for="card-input">CVC/CV  <i class="bx bx-question-mark"></i> </label>
+                    <input type="password" id="card-input" placeholder="***">
+                    <!-- Card icons to the right -->
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+            </div>
+            <button class="check-out-btn">Check out <i class="bx bx-right-arrow-alt"></i></button>
+            <p class="left-secure-warning"><i class="bx bx-lock"></i> 
+                Your transaction is secured by <img src="Images/stripe.png" alt="">
+            </p>
+        </div>
+        
+        <div class="paypal-details">
+            <div class="paypal-brand">
+                <label class="round-checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <p><i class='bx bxl-paypal' ></i><span class="pay">Pay<span class="pal">Pal</span></span></p>
+            </div>
+            <p>You will be redirected to PayPal website to complete your purchase securely.</p>
+        </div>
+    </div>
+    <div class="right-container">
+        <div class="shopping-cart">
+           <div class="cart">
+               <div class="item">
+                    <img src="./Images/woodland-shoe.jpeg" alt="">
+                    <span class="cart-count">1</span>
+               </div>
+                <div class="name-and-size">
+                    <p>WoodLand Camo</p>
+                    <span>XL</span>
+                </div>
+                <p>$ 150.00</p>
+           </div>
+           <div class="cart">
+               <div class="item">
+                    <img class="t-shirt" src="./Images/t-shirt.jpg" alt="">
+                    <span class="cart-count">1</span>
+               </div>
+                <div class="name-and-size">
+                    <p>WoodLand Camo</p>
+                    <span>9.5</span>
+                </div>
+                <p>$ 129.00</p>
+            </div>
+            <div class="cart">
+                <div class="item">
+                    <img src="./Images/Nike-Air.jpg" alt="">
+                    <span class="cart-count">1</span>
+                </div>
+                <div class="name-and-size">
+                    <p>Nike Air</p>
+                    <span>9</span>
+                </div>
+                <p>$ 129.00</p>
+            </div>
+        </div>
+
+        <div class="coupon-code">
+            <input type="text" placeholder="Discount code">
+            <button disabled>Apply</button>
+        </div>
+        <div class="amount">
+            <div class="subtotal">
+                <div>Subtotal: </div>
+                <div>$ 408.00</div>
+            </div>
+            <div class="subtotal">
+                <div>Shihpping: </div>
+                <div>Free</div>
+            </div>
+        </div>
+        <div class="total">
+            <div class="final subtotal">
+                <div>Total: </div>
+                <div>$ 408.00</div>
+            </div>
+        </div>
+    </div>
+   </div>
+</body>
+</html>

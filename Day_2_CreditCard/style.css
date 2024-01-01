@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan&family=Open+Sans:wght@300&family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+h5{
+    font-family: 'Roboto', sans-serif;
+    word-spacing: -5px;
+    opacity: .8;
+}
+h2{
+    opacity: .78;
+    margin: 10px 0 10px 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #B4D4FF, #86B6F6, #92C7CF);
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    height: 88%;
+    padding: 30px 40px;
+    border-radius: 10px;
+    background-color: #FBF9F1;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-brand{
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: center;
+}
+
+.big-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+}
+
+.card-brand{
+    margin-bottom: 20px;
+}
+.small-circle{
+    background-color: #fff;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    width: 280px; /* Adjust the width as needed */
+    height: 320px; /* Adjust the height as needed */
+    background-color: #FBF9F1; /* Set the background color as needed */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle lift effect */
+    padding: 30px; /* Add padding as needed */
+    /* Add other styles as needed */
+    margin-bottom: 10px;
+}
+
+.card-number {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* position: relative; */
+    width: 100%; /* Adjust the width as needed */
+}
+
+.card-number label {
+    grid-column: span 2;
+    font-size: 0.8em;
+    margin-bottom: 0.2em;
+}
+input:focus{
+    outline: 1px navy solid;
+}
+.card-number i{
+    opacity: .6;
+    display: flex;
+    position: relative;
+    left: -270px;
+    align-items: center;
+}
+.card-number input {
+    width: 13rem;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 40px 10px 30px; /* Adjust padding as needed */
+}
+.card-icons-right{
+    display: inline;
+    position: relative;
+    align-items: center;
+    width: 48px;
+    top: -30px;
+    left: 225px;
+}
+.card-icons-right img{
+    width: 20px;
+    object-fit: contain;
+}
+
+.date-of-card{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 10px 0;
+}
+.card-sm-input{
+    display: flex;
+    flex-direction: column;
+}
+.card-sm-input label{
+    font-size: .7rem;
+    margin-bottom: 4px;
+}
+.card-sm-input input{
+    border: none;
+    border-radius: 4px;
+    width: 70px;
+    padding: 10px 30px;
+}
+
+.card-sm-input label i{
+    position: relative;
+    width: 16px;
+    top: 0;
+    left: 0;
+}
+.card-sm-input i{
+    position: relative;
+    width: 16px;
+    top: -27px;
+    left: 8px;
+}
+
+.check-out-btn{
+    border: none;
+    border-radius: 4px;
+    background-color: #525CEB;
+    padding: 10px 10px;
+    color: #fff;
+}
+.check-out-btn:hover{
+    cursor: pointer;
+}
+.left-secure-warning{
+    font-size: 12px;
+    opacity: .4;
+}
+.left-secure-warning img{
+    width: 32px;
+    position: relative;
+    top: 13px;
+}
+
+.paypal-details {
+
+    width: 300px;
+    height: 40px;
+    background-color: #FBF9F1;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.paypal-brand{
+    display: flex;
+}
+
+/* Your CSS Styles Here */
+
+.round-checkbox {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    height: 20px; /* Adjust the size as needed */
+    width: 20px; /* Adjust the size as needed */
+}
+
+/* Hide the default checkbox */
+.round-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create the custom checkbox design */
+.round-checkbox .checkmark {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #ccc; /* Border color */
+    box-sizing: border-box;
+}
+
+/* Style the checkbox when checked */
+.round-checkbox input:checked + .checkmark {
+    background-color: #4CAF50; /* Change background color when checked */
+    border-color: #4CAF50; /* Change border color when checked */
+}
+
+.paypal-brand p{
+    font-style: italic;
+    font-weight: bold;
+}
+.pay{
+    color: #3559E0;
+}
+.pal{
+    color: #4CB9E7;
+}
+
+.paypal-details > p{
+    font-size: .7rem;
+    opacity: .4;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 68px;
+    width: 300px; /* Adjust the width as needed */
+    height: 320px; /* Adjust the height as needed */
+    background-color: #FBF9F1; /* Set the background color as needed */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+}
+.shopping-cart {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    border-bottom: 1px #607274 solid;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+.cart{
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr;
+}
+.item{
+    display: flex;
+    width: 60px;
+}
+.item span{
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .7em;
+    color: #fff;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #163020;
+}
+
+.name-and-size{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.name-and-size p{
+    text-align: center;
+   font-size: .8rem;
+   opacity: .7;
+}
+.name-and-size span{
+    font-size: .8rem;
+    opacity: .7;
+}
+.cart p{
+    text-align: center;
+    opacity: .7;
+    font-size: .8rem;
+}
+.cart img{
+    width: 36px;
+    border-radius: 4px;
+}
+
+.item .cart-count{
+    
+    position: relative;
+    top: 24px;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   font-size: 6px;
+}
+.cart .t-shirt{
+    height: 40px;
+    object-fit: fill;
+}
+.coupon-code {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.coupon-code input{
+    border: none;
+    padding: 10px 20px;
+}
+.coupon-code button{
+    padding: 0 30px 0 30px;
+    color: #fff;
+}
+.amount {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px #607274 solid;
+    /* padding-bottom: 30px; */
+}
+.subtotal{
+    opacity: .7;
+    font-size: .8em;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.total {
+    margin-top: 20px;
+}
+
+.final{
+    opacity: 1;
+    font-weight: bold;
+}

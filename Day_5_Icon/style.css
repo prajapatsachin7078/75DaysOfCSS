@@ -1,0 +1,226 @@
+/* <style> */
+  @import url('https://fonts.googleapis.com/css2?family=Anuphan&family=Open+Sans:wght@300&family=Playpen+Sans&family=Roboto:wght@300;400&display=swap');
+/* </style> */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playpen Sans', cursive;
+    margin: 0;
+    background-color: #9da84a;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50vw;
+    height: 70vh;
+}
+
+.logo {
+    width: 10vw; /* Responsive width */
+    height: 10vw; /* Responsive height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    background: linear-gradient(215deg, #4CB9E7, #437396, #4F6F52);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transform: translate(0, -5px);
+}
+
+.mobile-view .logo{
+    width: 5vw; /* Responsive width */
+    height: 5vw; /* Responsive height */
+    /* font-size: 1.4vw; */
+    margin-top: 8px;
+    border-radius: 10px;
+}
+.mobile-view .logo h1{
+    /* top: -15px; */
+    font-size: 1.2vw;
+    top: -10px;
+}
+.mobile-view .logo i{
+    /* /* top: 27%; */
+    left: -5px;
+    font-size: 1.4vw;
+}
+.logo i {
+    color: #07c1f0;
+    font-size: 2.4vw; /* Responsive font size */
+    position: relative;
+    top: 15%; /* Adjust as needed */
+    left: -11px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    position: relative;
+    top: -18px;
+    color: #EF4040;
+    font-size: 2.4vw; /* Responsive font size */
+}
+.mobile-view{
+    width: 35%;
+    height: 100%;
+    background-color: #FFF6F6;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.nav{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #EBF3E8;
+}
+
+.nav p{
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.other-nav{
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.app-store{
+    height: 95%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    
+}
+.app-info{
+    height: 20%;
+    display: flex;
+    margin: 20px 10px;  
+      
+}
+.app-des{
+    margin-left: 10px;
+}
+.app-des h2{
+    font-size: .8rem;
+    margin: 0;
+}
+.app-des p{
+    font-size: .4em;
+    margin: 0;
+}
+.app-des div{
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 14px;
+    border-radius: 4px;
+    background-color: #4CB9E7;
+    font-size: 20px;
+    color: white;
+    margin-top: 22px;
+}
+.app-achivements{
+    display: flex;
+    align-items: center;
+    /* opacity: .8; */
+    justify-content: space-between;
+}
+.rating{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    margin-left: 10px;
+    opacity: .8;
+}
+.stars{
+    margin: 0;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.stars-des{
+    font-size: .4em;
+    margin-top: 2px;
+}
+
+.stars i{
+    font-size: .6em;
+}
+.lifestyle{
+    align-self: flex-start;
+}
+.lifestyle span{
+    font-size: 1em;
+    position: relative;
+    top: -3px;
+}
+.lifestyle .stars-des{
+    margin-top: -10px;
+}
+.rank{
+    display: flex;
+    flex-direction: column;
+}
+.rank div{
+    height: 12px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.rank div span{
+    font-size: .6em;
+    margin: 0;
+}
+.rank div h4{
+    font-size: .6em;
+    margin-top: -3px;
+}
+
+.age-rank{
+    margin-right: 10px;
+}
+
+.sample-img{
+    width: 100%;
+    /* width: 12.6em; */
+    height: 60%;
+    /* background-color: #ca1a1a; */
+    /* margin: 20px 10px; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.first-img{
+    height: 90%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(215deg, #e74cb9, #967343, #6a9e6f);
+    margin-left: 10px;
+    overflow: hidden;
+}
+.first-img i{
+    font-size: 8rem;
+    object-fit: contain;
+    color: #07c1f0;
+    /* margin-left: 10px; */
+}
+
+
+

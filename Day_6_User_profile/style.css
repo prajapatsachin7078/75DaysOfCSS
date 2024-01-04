@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan&family=Open+Sans:wght@300&family=Playpen+Sans&family=Poppins:wght@300&family=Roboto:wght@300;400&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(94, 160, 158);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.mobile-container{
+    width: 260px;
+    height: 500px;
+    padding-top: 16px;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(211, 225, 225);
+}
+
+.top, .bottom{
+    width: 85%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* background-color: gray; */
+}
+
+.border-bottom{
+    width: 100%;
+    height: 2px;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+}
+.border-bottom div{
+    width: 45px;
+    position: relative;
+    left: 12px;
+    height: 3px;
+    top: -1px;
+    background-color:  rgb(94, 160, 158);
+}
+
+.nav{
+    display: flex;
+    height: 7%;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.nav-brand{
+    display: flex;
+    align-items: center;
+}
+.nav-brand p{
+    margin: 0;
+    font-weight: bold;
+    padding: 0;
+    font-size: .8em;
+}
+.nav i{
+    font-size: 1.2rem;
+}
+
+img{
+    width: 25%;
+    border-radius: 50%;
+}
+.profile-summary {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.user-name {
+    font-weight: bold;
+    font-size: .8em;
+}
+.profile-des {
+    text-align: center;
+    font-size: .6em;
+    opacity: .7;
+}
+.profile-des span{
+    color: rgb(20, 184, 179);
+    opacity: 2;
+    
+    font-weight: bold;
+}
+
+.options{
+    font-size: .6em;
+    display: flex;
+    justify-content: space-between;
+    opacity: .7;
+}
+
+.options p:nth-child(1){
+    color: rgb(20, 184, 179);
+}
+button{
+    border: none;
+    background-color: rgb(20, 184, 179);
+    padding: 10px 60px;
+    border-radius: 20px;
+    opacity: .8;
+    color: #fff;
+}
+.bottom{
+    justify-content: space-evenly;
+    line-height: 5px;
+    opacity: .8;
+}
+
+.profile-info p:nth-child(1){
+    font-size: .5em;
+    /* font-weight: bold; */
+
+}
+.profile-info p:nth-child(2){
+    font-size: .6em;
+    font-weight: bold;
+}
+
+
+
+
+
+

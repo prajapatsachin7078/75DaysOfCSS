@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan&family=Open+Sans:wght@300&family=Playpen+Sans&family=Poppins:wght@300&family=Quicksand:wght@300;400&family=Roboto:wght@300;400&display=swap');
+
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    padding: 0;
+    color: #fff;
+    margin: 0;
+}
+.container{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+.main{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    flex-direction: column;
+    background-image: url(dark-bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; /* Positions the background image at the bottom center */
+    width: 100%;
+    height: 70%;
+}
+
+.nav-bar{
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px 30px;
+    /* margin-top: 10px; */
+    height: 10%;
+    border-bottom:  1px solid #ffffffa9;
+    /* background-color: red; */
+    /* top: 20px; */
+}
+
+h2,h1{
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+    
+}
+.nav-bar .menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu li{
+    margin-left: 34px;
+    font-size: .9rem;
+    font-weight: bold;
+}
+.menu li:hover{
+    cursor: pointer;
+}
+.error-des{
+    width: 50%;
+    height: 85%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.error-des h1{
+    font-size: 3.8rem;
+    margin: 0;
+}
+.error-des button {
+    padding: 1rem 2rem;
+    background: linear-gradient(to right, #C21292, #3559E0, #4CB9E7);
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    transition: all .5s ease-in-out;
+}
+
+.error-des button:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* Zoom in on hover */
+}
+
+footer{
+    width: 100%;
+    height: 30%;
+    background-color: black;
+    /* padding: 10px 20px; */
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+footer >div:nth-child(1){
+    /* width: 100%; */
+    height: 65%;
+    background-color: black;
+    padding: 10px 30px 0 30px ;
+    /* box-sizing: border-box; */
+    border-bottom: 1px solid #ffffff94;
+    display: flex;
+}
+.nav-brand-des{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.nav-brand-des>div{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+}
+.nav-brand-des > div p{
+    font-size: .6em;
+    opacity: .7;
+    line-height: 1px;
+}
+
+.v-list{
+    width: 80%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.v-list ul {
+    list-style: none;
+    height: 100%;
+    margin: 0;
+}
+
+.v-list ul li:nth-child(1) {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.v-list ul li:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, #C21292, #3559E0, #4CB9E7);
+    z-index: -1;
+}
+
+.v-list ul li {
+    font-size: .7em;
+    opacity: 0.8;
+    line-height: 20px;
+}
+
+.v-list ul li:not(:nth-child(1)):hover {
+    opacity: 1;
+}
+
+
+.contacts{ 
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 30px 0 30px;
+    align-items: center;
+}
+.contacts > div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    width:30%;
+    opacity: .7;
+    font-size: .8em;
+}
+
+.contacts div:nth-child(2) i{
+    
+    font-size: 1.4em;
+}
+.bxl-linkedin-square {
+    border-radius: 8px;
+    color: #0077B5; /* LinkedIn icon color */
+}
+
+.bxl-twitter {
+    color: #1DA1F2; /* Twitter icon color */
+}
+
+.bxl-facebook-square {
+    border-radius: 8px;
+    color: #1877F2; /* Facebook icon color */
+}

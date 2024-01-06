@@ -1,0 +1,259 @@
+/* <style> */
+  @import url('https://fonts.googleapis.com/css2?family=Anuphan&family=Open+Sans:wght@300&family=Playpen+Sans&family=Poppins:wght@300&family=Roboto:wght@300;400&display=swap');
+/* </style> */
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+.left-section{
+    width: 28%;
+    height: 100%;
+    background-color: black;
+    padding-left: 30px;
+    padding-top: 40px;
+}
+.right-section{
+    background-color: rgb(222, 232, 228);
+    width: 72%;
+    display: flex;
+    padding: 0 10px 0 10px;
+    flex-direction: column;
+    height: 100%;
+}
+.brand-name{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.brand-name h1{
+    color: #fff;
+    font-size: 1.6em;
+}
+.brand-name i{
+    color: #FF004D;
+    font-size: 1.6em;
+}
+.brand-name h1::first-letter {
+    color: yellow;
+}
+.search-bar-left{
+    margin-top: 30px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.search-bar-left h3{
+    color: white;
+    font-size: 1.4em;
+} 
+.search-bar-left p{
+    /* Add your styles for the search bar container */
+    font-size: .7em;
+    color: white;
+}
+
+.search-input-container {
+    position: relative;
+    color: #555;
+    font-size: 1.2rem;
+}
+.search-input-container input {
+    border: none;
+    padding: 6px 0 6px 40px;
+    border-radius: 14px;
+    color: #fff;
+    font-size: 1rem;
+    background-color: rgba(241, 237, 237, 0.2); /* Adjust the RGBA values and alpha as needed */
+    /* color: #fff; Adjust the text color as needed */
+}
+
+.search-input-container i {
+    position: absolute;
+    top: 55%;
+    left: 10px;
+    transform: translateY(-50%);
+    /* color: #555; Adjust the color as needed */
+}
+.setting-list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px 0 10px 0;
+    height: 50%;
+    border-bottom: 2px solid rgba(252, 250, 250, 0.576);
+}
+.setting-list div{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    color: white;
+    font-size: .9em;
+    width: 100%;
+}
+.setting-list div:last-child{
+    width: 100%;
+    height: 30px;
+    background-color: #fff;
+    font-weight: bold;
+    color: black;
+    border-top-left-radius: 10px;
+    margin-bottom: 10px;
+    border-bottom-left-radius: 10px;
+}
+.setting-list span{
+    margin: 0 10px 0 10px;
+    font-size: 1.2em;
+}
+.user-profile{
+    margin-top: 10px;
+    height: 10%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user-profile img{
+    width: 40px;
+    border-radius: 50%;
+}
+.user-profile .user{
+    line-height: 1em;
+    color: #fff;
+}
+.user-profile .user p{
+    font-size: .6em;
+}
+.user-profile span{
+    color: #fff;
+}
+
+.nav{
+    margin-top: 40px;
+    display: flex;
+    padding: 0 40px 10px 40px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.nav .profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 35%;
+    
+}
+.profile img{
+    width: 30px;
+    border-radius: 50%;
+}
+input:focus{
+    outline: none;
+}
+
+.profile .search-input-container i{
+    font-size: .8em;
+    opacity: .5;
+}
+.profile > span{
+    opacity: .5;
+}
+
+.profile .search-input-container input{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 2px 30px;
+    opacity: .5;
+    color: black;
+    width: 130px;
+    background-color: #fff;
+}
+
+.summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.horizontal-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    font-weight: 700;
+    font-size: .8em;
+}
+.horizontal-list p:nth-child(5){
+    border-bottom: 1px solid rgb(53, 183, 234);
+    color: rgb(53, 183, 234);
+}
+.option-list{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 180px 0 40px;
+}
+.option{
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    margin-bottom: 20px;
+    width: 100%;
+}
+.option-list h3{
+    margin-bottom: 16px;
+}
+.option div > h5{
+    opacity: .8;
+}
+.option div > h6{
+    opacity: .6;
+    font-style: italic;
+}
+.option>h5{
+    
+    color: rgb(53, 183, 234);
+}
+
+.option .toggle-btn{
+    color:rgb(53, 183, 234);
+    font-size: 2.4rem;
+}
+.auth{
+    display: flex;
+}
+.review{
+    width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.review >div{
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    border: 1px solid rgb(53, 183, 234);
+    font-size: .6rem;
+    font-weight: bold;
+    
+}
+.review h5{
+    color: rgb(53, 183, 234);
+}
+
+
+
+

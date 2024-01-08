@@ -1,0 +1,184 @@
+/* <style> */
+  @import url('https://fonts.googleapis.com/css2?family=Anuphan&family=Open+Sans:wght@300&family=Playpen+Sans&family=Poppins:wght@300&family=Quicksand:wght@300;400&family=Roboto:wght@300;400&display=swap');
+/* </style> */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    /* background-color: black; */
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    width: 280px;
+    height: 560px;
+    background-color: white;
+    padding: 14px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.nav{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+.nav-icons{
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+    height: 100%;
+}
+
+.nav-icons span{
+    font-size: 1.4rem;
+    opacity: .4;
+}
+.nav-icons span:nth-child(2){
+    font-size: 1.5rem;
+}
+.date{
+    margin: 5%;
+    background-color: rgb(221, 221, 221);
+    border-radius: 10px;
+}
+.date p{
+    font-size: 10px;
+    padding: 2px 8px;
+}
+.card{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+.card-img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    /* padding: 20px; */
+    /* border-radius: 20px; */
+    background-image: url(roys-high.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-des{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* height: max-content; */
+    border-radius: inherit;
+    padding: 10px 10px 0 10px;
+    /* box-shadow: -5px 0 8px -7px rgba(0, 0, 0, 0.75), 5px 0 8px -7px rgba(0, 0, 0, 0.75), 0 5px 5px -5px rgba(0, 0, 0, 0.75); */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.brand-des{
+    width: 50%;
+    /* margin-top: 20px; */
+    text-align: center;
+}
+.brand-des h4{
+    font-weight: bold;
+}
+.brand-des .nz{
+    font-weight: bold;
+}
+.brand-des p{
+    font-size: 10px;
+}
+
+.activity{
+    width: 100%;
+    /* height: 45%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.heart{
+    /* background-color: red; */
+    object-fit: cover;
+
+    color: red;
+}
+.icon .material-symbols-outlined{
+    font-size: 1rem;
+}
+.icon span{
+    font-size:10px;
+}
+.social-media{
+    width: 80%;
+    height: 10%;
+    border-radius: 16px;
+    /* box-shadow:0 -3px 10px -5px rgba(0, 0, 0, 0.75),-3px 0 10px -5px rgba(0, 0, 0, 0.75), 3px 0 10px -5px rgba(0, 0, 0, 0.75), 0 3px 10px -5px rgba(0, 0, 0, 0.75); */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.circle{
+    width: 20%;
+    height: 75%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    /* background-color: brown; */
+}
+.fb{
+    background-color: rgb(190, 190, 235);
+    color: rgb(0, 0, 255);
+}
+.insta{
+    background-color: rgb(244, 204, 211);
+    color: rgb(234, 19, 141)
+}
+.pint{
+    background-color: rgb(239, 181, 239);
+    color: rgb(239, 12, 54);
+}
+.new-collection{
+    width: 80%;
+    height: 10%;
+    border: 3px dotted rgb(221, 221, 221);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.new-collection span{
+    font-size: 2em;
+    opacity: .1;
+}
+
+    
